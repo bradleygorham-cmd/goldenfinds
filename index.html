@@ -1,1 +1,170 @@
 
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niagara Golden Finds Recovery | Lost Something Valuable?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
+        
+        :root {
+            --gold: #f59e0b;
+        }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('https://picsum.photos/id/1015/1920/1080');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .logo-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .nav-link {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link:hover {
+            color: #f59e0b;
+            transform: translateY(-2px);
+        }
+        
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white font-sans">
+    <!-- Navbar -->
+    <nav class="bg-black/90 backdrop-blur-md fixed w-full z-50 border-b border-amber-900">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-yellow-600 rounded-full flex items-center justify-center border-2 border-amber-300">
+                    <i class="fa-solid fa-magnifying-glass-dollar text-2xl text-black"></i>
+                </div>
+                <div>
+                    <span class="logo-font text-2xl font-bold tracking-tighter text-amber-400">NIAGARA</span>
+                    <span class="logo-font text-2xl font-bold tracking-tighter">GOLDEN FINDS</span>
+                    <p class="text-[10px] text-amber-300 -mt-1 tracking-[2px]">RECOVERY</p>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#" class="nav-link">HOME</a>
+                <a href="#" class="nav-link">ABOUT US</a>
+                <a href="#" class="nav-link">WHAT WE FIND</a>
+                <a href="#" class="nav-link">HOW IT WORKS</a>
+                <a href="#" class="nav-link">PRICING</a>
+                <a href="#" class="nav-link">SERVICE AREAS</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <a href="tel:2893212810" 
+                   class="bg-amber-500 hover:bg-amber-600 transition-colors text-black font-semibold px-6 py-3 rounded-xl flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-phone"></i>
+                    (289) 321-2810
+                </a>
+                <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+                        class="hidden md:block border border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black px-5 py-3 rounded-xl transition-colors">
+                    CONTACT US
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero-bg h-screen flex items-center pt-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 bg-black/70 text-amber-400 text-sm font-medium tracking-widest px-6 py-2 rounded-full mb-8">
+                <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                NIAGARA REGION'S PREMIER METAL DETECTING RECOVERY
+            </div>
+            
+            <h1 class="text-6xl md:text-7xl font-bold leading-none mb-6">
+                LOST SOMETHING<br><span class="text-amber-400">VALUABLE?</span>
+            </h1>
+            
+            <p class="text-2xl md:text-3xl text-amber-100 mb-10 max-w-2xl mx-auto">
+                We can help you find it.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+                        class="bg-amber-500 hover:bg-amber-400 text-black text-xl font-semibold px-12 py-6 rounded-2xl transition-all flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-phone"></i>
+                    DON'T GIVE UP - CALL NOW
+                </button>
+                
+                <a href="#how" 
+                   class="border-2 border-white/80 hover:border-white text-white text-xl font-semibold px-10 py-6 rounded-2xl transition-all flex items-center justify-center">
+                    SEE HOW IT WORKS
+                </a>
+            </div>
+            
+            <div class="mt-16 flex justify-center gap-8 text-sm">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-shield-halved text-amber-400 text-2xl"></i>
+                    <div>
+                        <div class="font-medium">Professional Equipment</div>
+                        <div class="text-amber-300 text-xs">Minelab &amp; Garrett Detectors</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-video text-amber-400 text-2xl"></i>
+                    <div>
+                        <div class="font-medium">Full Video Recording</div>
+                        <div class="text-amber-300 text-xs">GoPro + Tripod</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating ring -->
+        <div class="hidden lg:block absolute bottom-24 right-24 bg-black/70 p-4 rounded-3xl shadow-2xl border border-amber-300/30">
+            <img src="https://picsum.photos/id/201/180/180" alt="Lost Ring" class="w-28 h-28 object-contain">
+        </div>
+    </header>
+
+    <!-- What We Recover -->
+    <section class="py-20 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">What We Recover</h2>
+                <p class="text-amber-300 max-w-md mx-auto">From sentimental jewelry to valuable collectibles — we find what others can't.</p>
+            </div>
+            
+            <div class="grid grid-cols-3 md:grid-cols-6 gap-8">
+                <div class="text-center service-card">
+                    <div class="w-16 h-16 mx-auto bg-zinc-800 rounded-2xl flex items-center justify-center mb-4 text-3xl">💍</div>
+                    <p class="font-medium">Wedding &amp; Engagement Rings</p>
+                </div>
+                <div class="text-center service-card">
+                    <div class="w-16 h-16 mx-auto bg-zinc-800 rounded-2xl flex items-center justify-center mb-4 text-3xl">💎</div>
+                    <p class="font-medium">Gold, Silver &amp; Platinum Jewelry</p>
+                </div>
+                <div class="text-center service-card">
+                    <div class="w-16 h-16 mx-auto bg-zinc-800 rounded-2xl flex items-center justify-center mb-4 text-3xl">🔑</div>
+                    <p class="font-medium">Keys &amp; Key Fobs</p>
+                </div>
+                <div class="text-center service-card">
+                    <div class="w-16 h-16 mx-auto bg-zinc-800 rounded-2xl flex items-center justify-center mb-4 text-3xl">⌚</div>
+                    <p class="font-medium">Watches</p>
+                </div>
+                <div class="text-center service-card">
+                    <div class="w-16 h-16 mx-auto bg-zinc-800 rounded-2xl flex items-center justify-center mb-4 text-3xl">💰</div>
+                    <p class="font-medium">Coins &amp; Collectibles</p>
+                </div>
+                <div class="text-center service-card">
+                    <div class="w-16 h-16 mx-auto bg-zinc-800 rounded-2xl flex items-center justify-center mb-4 text-3xl">📍</div>
+                    <p class="font-medium">Survey Markers &amp; More</p>
+                </div>
